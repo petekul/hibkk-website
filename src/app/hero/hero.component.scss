@@ -1,5 +1,14 @@
 .hero {
-    height: 800px;
-    width: 100%;
-    background-color: green;
+    height: 44rem;
+    width: 100vw;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+
+    &-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

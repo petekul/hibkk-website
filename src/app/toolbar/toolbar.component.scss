@@ -1,0 +1,41 @@
+@use '../../stylesheet.scss' as styles;
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: styles.$color-red;
+    color: black;
+    font-weight: 600;
+    padding:0 2rem;
+    &-link {
+        margin: 0 1rem;
+    }
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }

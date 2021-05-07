@@ -1,6 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-
+/*Global*/
 @import url(./stylesheet.scss);
-
 @import url(./app/app.component.scss);
+
+/* Pages */
+@import url(./app/home/home.component.scss);
+@import url(./app/footer/footer.component.scss);
+
+/* Components */
 @import url(./app/hero/hero.component.scss);
+@import url(./app/toolbar/toolbar.component.scss);
+@import url(./app/banner/banner.component.scss);

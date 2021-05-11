@@ -1,0 +1,51 @@
+
+<app-hero></app-hero>
+
+<div class="section" role="main">
+    <h1>MENU</h1>
+    <div class="menu subsection" *ngFor="let section of menu;">
+
+        <div class="menu-item subsection-col" >
+            <div *ngFor="let item of section.items">
+                <span> 
+                    <h4 class="menu-item_number">{{item.number}}. </h4> 
+                    <h4 class="menu-item_title"> {{item.title}}</h4> 
+                </span>
+                <div class="menu-item-container">
+                    <div class="menu-item_description">{{item.description}}</div>
+
+                    <div class="menu-item-subcontainer" *ngIf="item.prices?.length">
+                        <div class="menu-item_prices" *ngFor="let choice of item.prices as PriceOption"> 
+                            <div class="menu-item_prices-option">{{choice.option}}</div>
+                            <div class="menu-item_price">£{{choice.price}}</div>
+                        </div>
+                    </div>
+    
+                    <div class="menu-item_price" *ngIf="item.price">£{{item.price}}</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="menu-item subsection-col">
+
+        </div>
+    </div>
+</div>
+
+<app-banner></app-banner>
+
+<div class="section">
+    <h1>Menu</h1>
+    <ul>
+        <li><a>Starters</a></li>
+        <li><a>Mains</a></li>
+        <li><a>Chef's Recommendations</a></li>
+        <li><a>Vegetarian</a></li>
+        <li><a>Rice & Noodles</a></li>
+    </ul>
+</div>
+
+<app-banner></app-banner>
+
+
+<app-footer></app-footer>

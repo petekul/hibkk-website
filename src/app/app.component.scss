@@ -22,10 +22,35 @@ h6 {
   margin: 8px 0;
 }
 
+h5 {
+  font-size: styles.$font-size-sm;
+}
+
 p {
   margin: 0;
 }
 
 .material-icons {
   color: styles.$color-dark-red;
+}
+
+.section {
+  display: flex;
+  margin: auto;
+  padding: 0 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subsection {
+  display: flex;
+  justify-content: space-evenly;
+  &-col{
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 4rem;
+  }
+  span {
+      display: block;
+  }
 }

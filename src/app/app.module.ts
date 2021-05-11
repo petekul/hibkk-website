@@ -10,10 +10,12 @@ import { BannerComponent } from './banner/banner.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './menu/menu.component';
 
 const appRoutes: Routes = [
   { path: 'hero', component: HeroComponent },
   { path: 'banner', component: BannerComponent },
+  { path: 'menu', component: MenuComponent },
   { path: '**', component: HomeComponent },
 ];
 @NgModule({
@@ -23,7 +25,8 @@ const appRoutes: Routes = [
     BannerComponent,
     ToolbarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

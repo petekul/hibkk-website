@@ -11,6 +11,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
+import { MenuSectionComponent } from './menu-section/menu-section.component';
 
 const appRoutes: Routes = [
   { path: 'hero', component: HeroComponent },
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     ToolbarComponent,
     HomeComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    MenuSectionComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

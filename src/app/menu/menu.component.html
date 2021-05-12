@@ -4,8 +4,8 @@
 <div class="section" role="main">
     <h1>MENU</h1>
     <div class="menu subsection" *ngFor="let section of menu;">
-
         <div class="menu-item subsection-col" >
+            <h3>{{section.category}}</h3>
             <div *ngFor="let item of section.items">
                 <span> 
                     <h4 class="menu-item_number">{{item.number}}. </h4> 

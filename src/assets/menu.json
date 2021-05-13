@@ -45,7 +45,7 @@
                 "number":"7",
                 "title":"Khanom Pang Nagoong",
                 "description":"Crispy spice mince prawns on toast served with cucumber relish.",
-                "price":"5.95"
+                "price":"5.75"
             },
             {
                 "number":"8",
@@ -57,13 +57,13 @@
                 "number":"9",
                 "title":"Peek Gai Yat Sai",
                 "description":"Deep fried boneless chicken wings stuffed with spicy minced pork and herbs served with chilli sauce.",
-                "price":"5.95"
+                "price":"5.50"
             },
             {
                 "number":"10",
                 "title":"Hi Bangkok Platter (Minimum for 2 people)",
                 "description":"Delicious selections of Satays, fish cakes, Poh Pia Tord, prawns Tempura, Pla Muek Tord and stuffed chicken wings.",
-                "price":"5.95"
+                "price":"14.95"
             }
         ]
     },

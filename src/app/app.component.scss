@@ -4,6 +4,7 @@
 
 :host {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Maven Pro';
   font-size: 14px;
   color: #333;
   box-sizing: border-box;
@@ -20,6 +21,7 @@ h4,
 h5,
 h6 {
   margin: 8px 0;
+  color: styles.$color-dark-red;
 }
 
 h5 {
@@ -34,23 +36,3 @@ p {
   color: styles.$color-dark-red;
 }
 
-.section {
-  display: flex;
-  margin: auto;
-  padding: 0 1rem;
-  flex-direction: column;
-  align-items: center;
-}
-
-.subsection {
-  display: flex;
-  justify-content: space-evenly;
-  &-col{
-      flex-grow: 1;
-      flex-basis: 0;
-      padding: 4rem;
-  }
-  span {
-      display: block;
-  }
-}

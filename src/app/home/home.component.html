@@ -14,6 +14,8 @@ Friendly and smiling service and a great example of perfect hospitality – Hi B
             <h4>opening times</h4>
             <span>Sun - Thu: 6:00 - 11:00pm</span>
             <span>Fri - Sat: 6:00 - 11:30pm</span>
+            <button routerLink="/menu">See the Menu</button>
+            <button routerLink="/reservations">Book a Table</button>
         </div>
         <div class="subsection-col info-contact">
             <span class="info-contact_phone">
@@ -32,30 +34,30 @@ Friendly and smiling service and a great example of perfect hospitality – Hi B
 <app-banner></app-banner>
 
 <div class="section">
-    <h1>Menu</h1>
-    <ul>
-        <li><a>Starters</a></li>
-        <li><a>Mains</a></li>
-        <li><a>Chef's Recommendations</a></li>
-        <li><a>Vegetarian</a></li>
-        <li><a>Rice & Noodles</a></li>
-    </ul>
-</div>
-
-<app-banner></app-banner>
-
-<div class="section">
-    <h1>Takeaways & Delivery</h1>
+    
     <div class="subsection">
         <div class="subsection-col">
-            For takeaways and deliveries
+            <h1>Takeaways & Delivery</h1>
+            <div>
+                For takeaways and deliveries, Please call:
+                <a [href]="'tel:' + 02085425688">02085425688</a>
+            </div>
+            
 
-            Please call:
-
-            <a [href]="'tel:' + 02085425688">02085425688</a>
+            <div>
+                https://www.just-eat.co.uk/restaurants-tumnanthai-sw11/menu
+            </div>
+            
         </div>
         <div class="subsection-col">
-            https://www.just-eat.co.uk/restaurants-tumnanthai-sw11/menu
+            
+            <h1 id="booking">Reservations</h1>
+        <div class="">
+            For takeaways and deliveries, Please call:
+            <a [href]="'tel:' + 02085425688">02085425688</a>
+        </div>
+        <iframe src="https://widget.quandoo.co.uk/widget/reservation/merchant/pXhTT?sid=2" width="310" height="342" seamless="seamless" scrolling="no" frameborder="0"></iframe>
+    
         </div>
     </div>
 </div>
@@ -63,17 +65,21 @@ Friendly and smiling service and a great example of perfect hospitality – Hi B
 <app-banner></app-banner>
 
 <div class="section">
-    <h1>Reservations</h1>
+    <h1 id="booking">Find us Here</h1>
     <div class="subsection">
-        <div class="subsection-col">
-            For takeaways and deliveries
-
-            Please call:
-
-            <a [href]="'tel:' + 02085425688">02085425688</a>
+        <div class="subsection-col info-contact">
+            <span class="info-contact_phone">
+                <i class="material-icons">phone</i> 02085425688
+            </span>
+            <span class="info-contact_mail">
+                <i class="material-icons">email</i> hibkk@aol.com
+            </span>
+            <span class="info-contact_location">
+                <i class="material-icons">room</i> 132 Kingston Road, SW19 1LY - London
+            </span>
         </div>
         <div class="subsection-col">
-            
+            <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=hi%20bangkok%20london&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
     </div>
 </div>

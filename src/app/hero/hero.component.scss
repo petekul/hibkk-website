@@ -4,11 +4,17 @@
     background-color: grey;
     display: flex;
     justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./../../assets/images/restaurant.jpg');
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 
     &-title{
         display: flex;
         align-items: center;
         justify-content: center;
+        color: white;
+        font-size: 3rem;
+        font-family: 'Kalam';
     }
 }

@@ -19,6 +19,9 @@ export class MenuComponent implements OnInit {
 
   isNumber(val: any): boolean { return typeof val === 'number'; }
 
+  findSection(category: string){
+    return this.menu.find(section => section.category === category);
+  }
   
 }
 

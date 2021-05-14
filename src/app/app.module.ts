@@ -12,11 +12,11 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuSectionComponent } from './menu-section/menu-section.component';
+import { ReservationsComponent } from './reservations/reservations.component';
 
 const appRoutes: Routes = [
-  { path: 'hero', component: HeroComponent },
-  { path: 'banner', component: BannerComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'reservations', component: ReservationsComponent },
   { path: '**', component: HomeComponent },
 ];
 @NgModule({
@@ -28,7 +28,8 @@ const appRoutes: Routes = [
     HomeComponent,
     FooterComponent,
     MenuComponent,
-    MenuSectionComponent
+    MenuSectionComponent,
+    ReservationsComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

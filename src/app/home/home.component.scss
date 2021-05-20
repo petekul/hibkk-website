@@ -111,3 +111,39 @@ h1 {
         }
     }
 }
+
+@media (max-width: styles.$screen-size-md) {
+    .subsection {
+        &-col{
+            padding: 1rem;
+        }
+    }
+
+    .info {
+        &-map{
+            min-height: 26rem;
+            min-width: 26rem;
+            margin: 4rem 0;
+        }
+    }
+}
+
+@media (max-width: styles.$screen-size-sm) {
+    .subsection { 
+        display: block;
+        &-col{
+            padding: 1rem;
+        }
+    }
+
+    .info {
+        &-contact {
+            padding: 1rem 5rem;
+        }
+        &-map {
+            display: grid;
+            min-height: 20rem;
+            min-width: 20rem;
+        }
+    }
+}

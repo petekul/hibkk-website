@@ -1,3 +1,4 @@
+@use './../../stylesheet.scss' as styles;
 .hero {
     height: 44rem;
     width: 100vw;
@@ -17,5 +18,22 @@
         color: white;
         font-size: 3rem;
         font-family: 'Kalam';
+    }
+}
+
+@media (max-width: styles.$screen-size-md) {
+    .hero {
+        &-title {
+            text-align: center;
+            padding: 4rem;
+        }
+    }
+}
+
+@media (max-width: styles.$screen-size-sm) {
+    .hero {
+        &-title {
+            text-align: center;
+        }
     }
 }

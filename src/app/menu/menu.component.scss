@@ -1,5 +1,4 @@
-@use './../app.component.scss' as styles;
-
+@use './../../stylesheet.scss' as styles;
 
 .menu {
     width: 90%;
@@ -11,6 +10,25 @@
         }
         & span {
             display: flex;
+        }
+    }
+}
+
+
+@media (max-width: styles.$screen-size-md) {
+    .menu { 
+        display: block;
+        &-item {
+            padding: 1rem;
+        }
+    }
+}
+
+
+@media (max-width: styles.$screen-size-sm) {
+    .menu {
+        &-item {
+            padding: 1rem;
         }
     }
 }
